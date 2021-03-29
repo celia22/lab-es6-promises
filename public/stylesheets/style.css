@@ -22,11 +22,19 @@ label {
   display: flex;
 }
 
-#table {
+#table{
   height: 200px;
   display: flex;
   justify-content: space-evenly;
+  display: none;
 }
+
+#table > img{
+ width: 150px;
+ margin: 50px;
+}
+
+
 ol {
   width: 33%;
   position: relative;

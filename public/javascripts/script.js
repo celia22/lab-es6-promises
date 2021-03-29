@@ -38,6 +38,12 @@ addFood(mashPotatoes[0], '#mashPotatoes').then(() => {
   });
 });
 
+// Bonus 1s
+
+const drawTableFood = () => {
+  console.log("me llaman a dibujar")
+  document.getElementById("table").style.display = "block"
+}
 
 
 // Iteration 3 using async and await
@@ -48,8 +54,15 @@ async function makeFood() {
   const step2 = await addFood(brusselSprouts[2], "#brusselSprouts");
   const step3 = await addFood(brusselSprouts[3], "#brusselSprouts");
   const step4 = await addFood(brusselSprouts[4], "#brusselSprouts");
+  const drawFood = await drawTableFood();
 
 }
+
+
 makeFood();
+
+
+// Bonus 2
+
 
 
