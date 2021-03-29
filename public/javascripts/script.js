@@ -42,8 +42,14 @@ addFood(mashPotatoes[0], '#mashPotatoes').then(() => {
 
 // Iteration 3 using async and await
 
-async function makeFood(step) {
-  // ... your code here
+async function makeFood() {
+  const step0 = await addFood(brusselSprouts[0], "#brusselSprouts");
+  const step1 = await addFood(brusselSprouts[1], "#brusselSprouts");
+  const step2 = await addFood(brusselSprouts[2], "#brusselSprouts");
+  const step3 = await addFood(brusselSprouts[3], "#brusselSprouts");
+  const step4 = await addFood(brusselSprouts[4], "#brusselSprouts");
 
 }
-makeFood(eachStep);
+makeFood();
+
+
