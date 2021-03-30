@@ -54,6 +54,10 @@ async function makeFood() {
   const step2 = await addFood(brusselSprouts[2], "#brusselSprouts");
   const step3 = await addFood(brusselSprouts[3], "#brusselSprouts");
   const step4 = await addFood(brusselSprouts[4], "#brusselSprouts");
+  const step5 = await addFood(brusselSprouts[5], "#brusselSprouts");
+  const step6 = await addFood(brusselSprouts[6], "#brusselSprouts");
+  const step7 = await addFood(brusselSprouts[7], "#brusselSprouts");
+  const step8 = await addFood(brusselSprouts[8], "#brusselSprouts");
   const drawFood = await drawTableFood();
 
 }
