@@ -22,6 +22,7 @@ addFood(steak[0], '#steak', () => {
       })
     })
   })
+  console.log("steak call")
 });
 
 
@@ -36,17 +37,24 @@ addFood(mashPotatoes[0], '#mashPotatoes').then(() => {
       });
     });
   });
+  console.log("potatoes call")
 });
 
 // Bonus 1s
 
 const drawTableFood = () => {
-  console.log("me llaman a dibujar")
-  document.getElementById("table").style.display = "block"
+  document.getElementById("table").style.display = "block";
+  console.log("drawfood call")
 }
 
 
-// Iteration 3 using async and await
+function addButton() {
+  document.querySelector("button").style.display = "block"
+}
+
+
+
+// Iteration 3 using async and await 
 
 async function makeFood() {
   const step0 = await addFood(brusselSprouts[0], "#brusselSprouts");
@@ -58,7 +66,12 @@ async function makeFood() {
   const step6 = await addFood(brusselSprouts[6], "#brusselSprouts");
   const step7 = await addFood(brusselSprouts[7], "#brusselSprouts");
   const step8 = await addFood(brusselSprouts[8], "#brusselSprouts");
+  console.log("sprout call")
   const drawFood = await drawTableFood();
+  let served =  await Promise.all([addFood, makeFood, drawTableFood]).then(() => {
+    console.log("finish")
+    addButton()
+    });
 
 }
 
@@ -66,7 +79,12 @@ async function makeFood() {
 makeFood();
 
 
-// Bonus 2
 
 
 
+
+
+
+
+
+  

@@ -59,6 +59,7 @@ li {
 }
 
 button {
+  display: none;
   animation: enter 2s forwards;
   position: fixed;
   left: 50%;
